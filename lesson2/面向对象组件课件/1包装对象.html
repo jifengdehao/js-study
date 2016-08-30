@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script>
+
+/*function Aaa(){
+	this.name = '小明';
+}
+Aaa.prototype.showName = function(){
+	alert( this.name );
+};
+
+var a1 = new Aaa();
+a1.showName();
+//这就是面向对象
+
+var arr = new Array();
+arr.push();
+arr.sort();
+
+//在JS源码 : 系统对象也是基于原型的程序
+
+function Array(){
+	this.lenglth = 0;
+}
+Array.prototype.push = function(){};
+Array.prototype.sort = function(){};*/
+
+
+//尽量不要去修改或者添加系统对象下面的方法和属性
+/*
+var arr = [1,2,3];
+
+Array.prototype.push = function(){
+	
+	//this : 1,2,3
+	//arguments : 4,5,6
+	
+	for(var i=0;i<arguments.length;i++){
+		this[this.length] = arguments[i]
+	}
+	
+	return this.length;
+};
+
+arr.push(4,5,6);
+
+alert( arr );
+
+//pop shift unshift splice sort
+*/
+/*
+push 在数组的尾部添加，传入要添加的值 arr.push(arguments)
+shift 在数组的头部删除一位 不用传参 数组直接调用 arr.shift()即可
+unshift 在数组的头部添加 传入要添加的值 arr.unshift(arguments);
+pop 在数组的尾部删除一位，不用传参 数组直接调用 arr.pop()即可
+sotr 数组的排序，从小到大 从 A-Z a-z 大写字母为先
+*/
+//var arr=[1,2,3,8,7,4,3,9,4,2];
+//var arr=['A','H','S','A','GG','s','sfs','bb','BB'];
+var arr=[1,2,3]
+//arr.push(4,5,6);//1,2,3,4,5,6
+//arr.shift(); //2,3
+//arr.unshift(0,5,6); //0,5,6,1,2,3
+//arr.pop(); //1,2
+//arr.sort();
+//arr.splice(0,1);//2,3
+//arr.splice(0,2); //3
+arr.splice(1,2); //1 从第1位开始删除2位
+alert(arr);
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

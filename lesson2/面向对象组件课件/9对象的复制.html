@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script>
+/*
+var a = {
+	name : '小明'
+};
+
+var b = a;
+
+b.name = '小强';
+
+alert( a.name ); //小强  改变了a的name属性
+
+*/
+/*
+var a = {
+	name : '小明'
+};
+
+//var b = a;
+
+var b = {};
+
+extend( b , a );
+
+//alert(b.name);//小明
+
+
+b.name = '小强'; //b对象下重新赋值
+
+//alert( a.name ); //小明
+
+alert( b.name ); //小强
+
+//对象属性的拷贝
+function extend(obj1,obj2){
+	for(var attr in obj2){
+		obj1[attr] = obj2[attr];
+	}
+}
+*/
+
+/*
+var a = [1,2,3];
+var b = a;
+
+b.push(4); //这里添加了4 目前b 还是引用a的地址，b添加了,同样a也变化了
+
+alert(a);//1,2,3,4
+
+//b = [1,2,3,4];//b 新创建对象的重新赋值，并没有影响到a
+
+//alert(a);//1,2,3 
+*/
+var a=123;
+var b=a; //这里基本类型的值并没有被引用
+//b=123456;
+b++;
+alert(a);//123
+
+
+</script>
+</head>
+
+<body>
+</body>
+</html>
